@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:id="@+id/card_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    card_view:cardCornerRadius="4dp"
+                                    android:padding="5dp"
+                                    card_view:cardPreventCornerOverlap="true"
+                                    card_view:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/thumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/thumbnail"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                android:maxLines="2"
+                android:typeface="normal"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="18sp"
+                tools:text="Video Title text that is long enough to make the line wrap around to the next line." />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:typeface="normal"
+                android:textColor="@android:color/secondary_text_light"
+                tools:text="This is a sample description of the video item that is long enough to wrap around to the next line." />
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
