@@ -21,8 +21,16 @@ import models.FactsVO;
 
 
 /**
- * This class is the adapter for the recycler view
+ * 	Project's URL: https://github.com/talhaqamar/Android-Test
+ * 	Created By: Talha Qamar on 25 March 2018
+ * 	Author's Email: talhaaus@gmail.com
  */
+
+
+/**
+ * 	This class is the recycler view adapter which actually maps layout files with java files
+ */
+
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
    private List<FactsVO> mDataset;
    Context context;

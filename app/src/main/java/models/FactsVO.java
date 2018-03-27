@@ -3,9 +3,10 @@ package models;
 import com.google.gson.annotations.SerializedName;
 
 /**
- * Created by talhaqamar on 27/3/18.
+ * 	Project's URL: https://github.com/talhaqamar/Android-Test
+ * 	Created By: Talha Qamar on 25 March 2018
+ * 	Author's Email: talhaaus@gmail.com
  */
-
 
 /**
  * This class is the model for the data fetched from the api

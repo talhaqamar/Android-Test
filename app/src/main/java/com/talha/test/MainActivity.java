@@ -27,6 +27,13 @@ import models.FactsVO;
 import network.VolleySingleton;
 import utilities.Constants;
 
+/**
+ * 	Project's URL: https://github.com/talhaqamar/Android-Test
+ * 	Project's Author: Talha Qamar
+ * 	Author's Email: talhaaus@gmail.com
+ * 	Created On: 25 March 2018
+ */
+
 
 /**
  * This class is the main entry point of the project.
@@ -39,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
    List<FactsVO> factsList = new ArrayList<FactsVO>();
    RecyclerViewAdapter adapter;
    SwipeRefreshLayout swipeRefreshLayout;
+
+
+
+
    @Override
    protected void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
@@ -76,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
 	  }
    }
 
+
+   /**
+	* Load Data method fetch and parse the data
+	* Later save in the array list to populate the view
+	*/
    void loadData(){
 	  try {
 		 //  final ProgressDialog dialog = ProgressDialog.show(MainActivity.this, "","Loading. Please wait...", true);
