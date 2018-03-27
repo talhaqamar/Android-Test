@@ -10,6 +10,9 @@ import com.android.volley.toolbox.Volley;
  * Created by talhaqamar on 27/3/18.
  */
 
+/**
+ * VolleySingleton use to fetch data from the api
+ */
 public class VolleySingleton {
    private static VolleySingleton mInstance;
    private RequestQueue mRequestQueue;
