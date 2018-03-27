@@ -74,7 +74,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 	  holder.description.setText(fact.getDescription());
 
 	  Picasso.with(context)
-			  .load(fact.getImageHref()).fit()
+			  .load(fact.getImageHref())
 			  .placeholder(R.drawable.ic_launcher_background)
 
 			  .into(holder.thumbnail);
